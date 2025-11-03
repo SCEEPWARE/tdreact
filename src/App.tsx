@@ -2,7 +2,7 @@ import React, {ChangeEvent, FunctionComponent, useEffect, useMemo, useState} fro
 import superheros from '../public/SuperHeros.json' with {type : "json"};
 
 const App : FunctionComponent = () => {
-    const nom : string = "Frank Leboeuf";
+    const nom : string = "Toto";
     let [compteur, SetCompteur] = useState<number>(0);
 
     const listHeros = superheros.map(hero => <li>{hero.name}</li>)
@@ -36,5 +36,6 @@ const App : FunctionComponent = () => {
         </div>
     )
 }
+
 
 export default App;
